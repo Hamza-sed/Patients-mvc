@@ -5,9 +5,9 @@
 >
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" >
-    <script src="webjars/bootstrap/5.1.3/js/bootstrap.bundle.js"></script>
+    <title>Gestion des patients</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/5.1.3/css/bootstrap.min.css" >
+    <script src="/webjars/bootstrap/5.1.3/js/bootstrap.bundle.js"></script>
 </head>
 <body>
 <!-- Grey with black text -->
@@ -29,7 +29,7 @@
             </ul>
         <ul class="navbar-nav" >
             <li class="nav-item dropdown" sec:authorize="isAuthenticated()">
-                <a  class="nav-link dropdown-toggle" th:href="@{/logout}" role="button" data-bs-toggle="dropdown">
+                <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                     <span sec:authentication="name" ></span>
                 </a>
                 <ul class="dropdown-menu" sec:authorize="isAuthenticated()">
